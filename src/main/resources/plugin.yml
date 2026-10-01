@@ -1,6 +1,6 @@
 name: BlockPhysics
-description: $description
-prefix: [ BlockPhysics ]
+description: "$description"
+prefix: BlockPhysics
 version: '${version}'
 
 main: net.clanimg.blockPhysics.BlockPhysics
@@ -9,3 +9,14 @@ load: POSTWORLD
 
 authors: [ WrobelXXL ]
 website: https://clan-img.net
+
+commands:
+  physic:
+    description: Schaltet die Blockphysik (Sand, Gravel, Beton usw.) in der aktuellen Welt an oder aus.
+    usage: /physic <on|off>
+    permission: blockphysics.toggle
+
+permissions:
+  blockphysics.toggle:
+    description: Erlaubt das Ein-/Ausschalten der Blockphysik pro Welt.
+    default: op
